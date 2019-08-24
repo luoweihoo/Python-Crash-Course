@@ -1,6 +1,6 @@
 {
+    "python.jediEnabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-#    "python.pythonPath": "C:\\Python\\Python37\\python.exe"
     "python.pythonPath": "C:\\python_env\\env_general\\Scripts\\python.exe"
 }
