@@ -11,9 +11,9 @@ class GameStats:
     def __init__(self, ai_game):
         """Initialize statistics."""
         self.settings = ai_game.settings
-        self.rset_stats()
-        # Start Alien Invation in an actie state
-        self.game_active = True
+        self.reset_stats()
+        # Start Alien Invation in an inactive state
+        self.game_active = False
 
     def reset_stats(self):
         """Initialize statistics that can change during the game."""
