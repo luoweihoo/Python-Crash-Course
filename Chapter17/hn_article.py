@@ -1,0 +1,20 @@
+# @File    :   hn_article.py
+# @Time    :   2019/11/17 14:38:28
+# @Author  :   Wei Luo
+# @Version :   1.0
+# @Contact :   luoweihoo@yahoo.com
+# @Desc    :   None
+
+import requests
+import json
+
+# Make an API call, and store the response
+url = 'https://hacker-news.firebaseio.com/v0/item/19155826.json'
+r = requests.get(url)
+print(f"Status code: {r.status_code}")
+
+# Explore the structure of the data
+response_dict = r.json()
+readable_file = 'data/readable_hn_data.json'
+with open(readable_file, 'w') as f:
+    json.dump(response_dict, f, indent = 4)
