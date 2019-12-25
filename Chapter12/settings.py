@@ -6,7 +6,7 @@
 # @Desc    :   None
 
 class Settings:
-    # A class to store all settings for Alien Invations
+    """A class to store all settings for Alien Invations"""
     def __init__(self):
         """Initialize the game's static settings."""
         # Screen settings
