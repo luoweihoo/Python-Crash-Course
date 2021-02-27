@@ -1,6 +1,9 @@
 {
-    "code-runner.fileDirectoryAsCwd": true,
-    "code-runner.runInTerminal": true,
-    "code-runner.saveAllFilesBeforeRun": true,
-    "code-runner.saveFileBeforeRun": true
+    "python.jediEnabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.languageServer": "Jedi",
+    "python.linting.pylintArgs": [
+        "----extension-pkg-whitelist=1xml"
+    ]
 }
